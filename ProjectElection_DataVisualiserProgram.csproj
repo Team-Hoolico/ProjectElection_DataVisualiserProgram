@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Xceed.Wpf.AvalonDock.NET5">
+      <HintPath>..\..\Xceed.Wpf.AvalonDock.NET5.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero.NET5">
+      <HintPath>..\..\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro.NET5">
+      <HintPath>..\..\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010.NET5">
+      <HintPath>..\..\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit.NET5">
+      <HintPath>..\..\Xceed.Wpf.Toolkit.NET5.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

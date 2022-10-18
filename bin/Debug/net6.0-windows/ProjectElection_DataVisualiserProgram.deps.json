@@ -1,0 +1,95 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ProjectElection_DataVisualiserProgram/1.0.0": {
+        "dependencies": {
+          "Xceed.Wpf.AvalonDock.NET5": "4.4.0.0",
+          "Xceed.Wpf.AvalonDock.Themes.Aero.NET5": "4.4.0.0",
+          "Xceed.Wpf.AvalonDock.Themes.Metro.NET5": "4.4.0.0",
+          "Xceed.Wpf.AvalonDock.Themes.VS2010.NET5": "4.4.0.0",
+          "Xceed.Wpf.Toolkit.NET5": "4.4.0.0"
+        },
+        "runtime": {
+          "ProjectElection_DataVisualiserProgram.dll": {}
+        }
+      },
+      "Xceed.Wpf.AvalonDock.NET5/4.4.0.0": {
+        "runtime": {
+          "Xceed.Wpf.AvalonDock.NET5.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        }
+      },
+      "Xceed.Wpf.AvalonDock.Themes.Aero.NET5/4.4.0.0": {
+        "runtime": {
+          "Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        }
+      },
+      "Xceed.Wpf.AvalonDock.Themes.Metro.NET5/4.4.0.0": {
+        "runtime": {
+          "Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        }
+      },
+      "Xceed.Wpf.AvalonDock.Themes.VS2010.NET5/4.4.0.0": {
+        "runtime": {
+          "Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        }
+      },
+      "Xceed.Wpf.Toolkit.NET5/4.4.0.0": {
+        "runtime": {
+          "Xceed.Wpf.Toolkit.NET5.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjectElection_DataVisualiserProgram/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Xceed.Wpf.AvalonDock.NET5/4.4.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Xceed.Wpf.AvalonDock.Themes.Aero.NET5/4.4.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Xceed.Wpf.AvalonDock.Themes.Metro.NET5/4.4.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Xceed.Wpf.AvalonDock.Themes.VS2010.NET5/4.4.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Xceed.Wpf.Toolkit.NET5/4.4.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
