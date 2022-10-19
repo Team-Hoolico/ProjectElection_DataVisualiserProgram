@@ -8,12 +8,13 @@
         mc:Ignorable="d"
         Title="Data Visualiser" Height="1080" Width="1920" Background="#FF132134" ResizeMode="CanResize">
     <Grid Height="1080" Width="1920" Margin="0,-16,0,0">
+        <Button x:Name="Update" Content="Update" HorizontalAlignment="Left" Margin="0,16,0,0" VerticalAlignment="Top" Height="27" Width="54" Click="Button_Click" Background="#FF30435B" BorderBrush="Black"/>
         <Grid x:Name="Pie_Chart" HorizontalAlignment="Left" Height="942" Margin="137,51,0,0" VerticalAlignment="Top" Width="720">
             <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Team Vote Pie Chart" VerticalAlignment="Top" FontSize="72" Foreground="White" Width="690" TextAlignment="Center" Height="94" Margin="0,-35,0,0"/>
             <Grid HorizontalAlignment="Left" Height="164" VerticalAlignment="Top" Margin="35,66,0,0" Width="647">
                 <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Width="647">
                     <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="48" Fill="#FF953F3F"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="285,0,0,0" TextWrapping="Wrap" Text="Team A" VerticalAlignment="Center" FontSize="36" Foreground="White"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Team Dash" VerticalAlignment="Center" FontSize="36" Foreground="White" Margin="257,0,0,0"/>
                     <TextBlock x:Name="TeamAVote" HorizontalAlignment="Right" Margin="493,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Foreground="White" Width="129" Height="51" TextAlignment="Right"><Run Text="0"/><LineBreak/><Run/></TextBlock>
                 </Grid>
                 <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Width="646" Margin="0,53,0,0">
@@ -22,7 +23,7 @@
                         <ColumnDefinition Width="0*"/>
                     </Grid.ColumnDefinitions>
                     <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Center" Width="48" Fill="#FF3F5195"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="283,0,0,0" TextWrapping="Wrap" Text="Team B" VerticalAlignment="Center" FontSize="36" Foreground="White" Height="48" Width="114"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="223,0,0,0" TextWrapping="Wrap" Text="Team Unlocked" VerticalAlignment="Center" FontSize="36" Foreground="White" Height="48" Width="255"/>
                     <TextBlock x:Name="TeamBVote" HorizontalAlignment="Right" Margin="494,0,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="36" Foreground="White" Height="48" Width="128" TextAlignment="Right"/>
                 </Grid>
                 <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Width="646" Margin="0,106,0,0">
@@ -36,8 +37,64 @@
                 <DV:Pie x:Name="PieChart" Width="720" Height="720" Fill="#FF3F5195" Slice="0.5" Stroke="#FF132134" StrokeThickness="4"/>
             </Grid>
         </Grid>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="72" Foreground="White" Width="690" TextAlignment="Center" Height="94" Margin="1101,51,0,0"/>
-        <Button Content="Update" HorizontalAlignment="Left" Margin="0,16,0,0" VerticalAlignment="Top" Height="27" Width="54" Click="Button_Click" Background="#FF30435B" BorderBrush="Black"/>
+        <Grid x:Name="Table" HorizontalAlignment="Left" Height="1004" Margin="1052,16,0,0" VerticalAlignment="Top" Width="805">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Captain Votes" VerticalAlignment="Top" FontSize="72" Foreground="White" Width="746" TextAlignment="Center" Height="94" Margin="53,0,0,0"/>
+            <Grid HorizontalAlignment="Center" Height="903" Margin="0,101,0,0" VerticalAlignment="Top" Width="805">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="64" Foreground="White" Width="774" TextAlignment="Justify" Height="94" Margin="19,0,0,0"><Run Text="------------------------------"/><LineBreak/><Run/></TextBlock>
+                <Grid x:Name="Team_Dash" HorizontalAlignment="Left" Height="439" Margin="0,464,0,0" VerticalAlignment="Top" Width="535">
+
+
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="482" TextAlignment="Justify" Height="94" Margin="53,0,0,0"><Run Text="Ediz Teraz"/><Run Text="i"/><Run Language="tr-tr" Text="oğlu"/><LineBreak/><Run Language="tr-tr"/><LineBreak/><Run/><Run Text="oğlu"/><LineBreak/><Run/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="482" TextAlignment="Justify" Height="94" Margin="53,85,0,0"><Run Language="tr-tr" Text="Belgin Bal"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="482" TextAlignment="Justify" Height="94" Margin="53,170,0,0"><Run Language="tr-tr" Text="Laren Sayılı"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="482" TextAlignment="Justify" Height="94" Margin="53,255,0,0"><Run Language="tr-tr" Text="Serkan E. Ünal"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="482" TextAlignment="Justify" Height="94" Margin="53,345,0,0"><Run Language="tr-tr" Text="Berk Paçalı"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="48" Fill="#FF953F3F" Margin="0,27,0,0"/>
+                    <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="48" Fill="#FF953F3F" Margin="0,111,0,0"/>
+                    <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="48" Fill="#FF953F3F" Margin="0,199,0,0"/>
+                    <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="48" Fill="#FF953F3F" Margin="0,285,0,0"/>
+                    <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="48" Fill="#FF953F3F" Margin="0,377,0,0"/>
+                </Grid>
+                <Grid x:Name="Team_Unlocked" HorizontalAlignment="Left" Height="439" VerticalAlignment="Top" Width="535">
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="482" TextAlignment="Justify" Height="94" Margin="53,0,0,0"><Run Language="tr-tr" Text="Nisan Üstün"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="482" TextAlignment="Justify" Height="94" Margin="53,85,0,0"><Run Language="tr-tr" Text="Nesibe Özel"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="482" TextAlignment="Justify" Height="94" Margin="53,170,0,0"><Run Language="tr-tr" Text="Tan Paralik"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="482" TextAlignment="Justify" Height="94" Margin="53,255,0,0"><Run Language="tr-tr" Text="Josie İ. Çakmak"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="482" TextAlignment="Justify" Height="94" Margin="53,345,0,0"><Run Language="tr-tr" Text="Gaye Güçlü"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+
+
+                    <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="48" Fill="#FF3F5195" Margin="0,21,0,0"/>
+                    <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="48" Fill="#FF3F5195" Margin="0,105,0,0"/>
+                    <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="48" Fill="#FF3F5195" Margin="0,193,0,0"/>
+                    <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="48" Fill="#FF3F5195" Margin="0,279,0,0"/>
+                    <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="48" Fill="#FF3F5195" Margin="0,371,0,0"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="440" VerticalAlignment="Top" Margin="551,12,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="191*"/>
+                        <RowDefinition Height="248*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="Nisan" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="244" TextAlignment="Right" Height="94"><Run Language="tr-tr" Text="0"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock x:Name="Nesibe" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="244" TextAlignment="Right" Height="94" Margin="0,85,0,0"><Run Language="tr-tr" Text="0"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock x:Name="Tan" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="244" TextAlignment="Right" Height="94" Margin="0,170,0,0" Grid.RowSpan="2"><Run Language="tr-tr" Text="0"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock x:Name="Josie" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="244" TextAlignment="Right" Height="94" Margin="0,67,0,0" Grid.Row="1"><Run Language="tr-tr" Text="0"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock x:Name="Gaye" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="244" TextAlignment="Right" Height="94" Margin="0,154,0,0" Grid.Row="1"><Run Language="tr-tr" Text="0"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="440" VerticalAlignment="Top" Margin="549,464,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="191*"/>
+                        <RowDefinition Height="248*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="Ediz" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="244" TextAlignment="Right" Height="94"><Run Language="tr-tr" Text="0"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock x:Name="Belgin" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="244" TextAlignment="Right" Height="94" Margin="0,85,0,0"><Run Language="tr-tr" Text="0"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock x:Name="Laren" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="244" TextAlignment="Right" Height="94" Margin="0,170,0,0" Grid.RowSpan="2"><Run Language="tr-tr" Text="0"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock x:Name="Serkan" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="244" TextAlignment="Right" Height="94" Margin="0,67,0,0" Grid.Row="1"><Run Language="tr-tr" Text="0"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                    <TextBlock x:Name="Berk" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" Foreground="White" Width="244" TextAlignment="Right" Height="94" Margin="0,154,0,0" Grid.Row="1"><Run Language="tr-tr" Text="0"/><LineBreak/><Run Language="tr-tr"/></TextBlock>
+                </Grid>
+            </Grid>
+
+
+        </Grid>
     </Grid>
 
 </Window>
