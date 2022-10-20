@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Net.Http;
+using System.Net;
 
 namespace ProjectElection_DataVisualiserProgram
 {
@@ -47,7 +48,7 @@ namespace ProjectElection_DataVisualiserProgram
 
         public MainWindow()
         {
-            http.BaseAddress = new Uri("https://localhost:7241/");
+            http.BaseAddress = new Uri("http://192.168.1.103:5241");
             InitializeComponent();
             TeamText = new TextBlock[] { TeamAVote, TeamBVote };
             CaptainText = new TextBlock[] {Nisan, Nesibe, Josie, Tan, Gaye, Ediz, Belgin, Laren, Berk, Serkan};
